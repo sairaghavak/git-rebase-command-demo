@@ -14,6 +14,6 @@ Part - II
 |`master` commit messages stack | `b1-cut-from-commit-m1` commit messages stack|
 |---|---|
 |`m1`| `b1` <br> `m1`|
-|Now assume there is a change made to master as `m2` and the new commit stack for master looks like below  <br> `m2` <br> `m1` | If we do `git rebase master` from `this` branch. <br> Then <br> 1. It may result in conflicts. <br> 2. We have to fix those conflicts. <br> 3. unlike `git merge` no extra merge commit is needed, but you gotta do a force push using command `git push -f`. <br>Note: Just `git push` command doesn't work in this case <br> Now, the commit message stack for this branch looks clean and it seems as if the branch is cut from latest master i.e., branch commits are always on top of master commits<br> `b1` <br>`m2` <br> `m1`|
+|Now assume there is a change made to master as `m2` and the new commit stack for master looks like below  <br> `m2` <br> `m1` | If we do `git rebase master` from `this` branch. <br> Then <br> 1. It may result in conflicts. <br> 2. We have to fix those conflicts. <br> 3. unlike `git merge` no extra merge commit is needed, <br> 4. But you gotta do a force push using command `git push -f`. <br>Note: Just `git push` command doesn't work in this case <br> Now, the commit message stack for this branch looks clean and it seems as if the branch is cut from latest master i.e., branch commits are always on top of master commits<br> `b1` <br>`m2` <br> `m1`|
 
 
